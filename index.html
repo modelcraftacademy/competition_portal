@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModelCraft Academy - Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>ModelCraft Academy</h1>
+                    <p class="tagline">ML Model Performance Leaderboard</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Control Panel -->
+            <section class="control-panel">
+                <h2>Leaderboard Controls</h2>
+                <div class="button-group">
+                    <button id="refreshBtn" class="btn btn-primary">
+                        <i class="fas fa-sync-alt"></i> Refresh Leaderboard
+                    </button>
+                    <button id="addResultBtn" class="btn btn-success">
+                        <i class="fas fa-plus-circle"></i> Add New Result
+                    </button>
+                    <button id="editDataBtn" class="btn btn-info">
+                        <i class="fas fa-edit"></i> Edit/Update Data
+                    </button>
+                </div>
+                <div class="spreadsheet-info">
+                    <p><i class="fas fa-info-circle"></i> Click "Add New Result" to submit your model details via Google Spreadsheet</p>
+                </div>
+            </section>
+
+            <!-- Leaderboard -->
+            <section class="leaderboard-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy"></i> Model Performance Leaderboard</h2>
+                    <div class="sort-info">
+                        <span class="badge">Sorted by R² Score (Highest to Lowest)</span>
+                    </div>
+                </div>
+
+                <!-- Rankings Summary -->
+                <div class="rankings-summary">
+                    <div class="rank-card gold">
+                        <div class="rank-medal">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="rank-info">
+                            <h3>1st Place</h3>
+                            <p class="rank-score">R²: <span id="firstScore">-</span></p>
+                            <p class="rank-name" id="firstName">-</p>
+                        </div>
+                    </div>
+                    <div class="rank-card silver">
+                        <div class="rank-medal">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="rank-info">
+                            <h3>2nd Place</h3>
+                            <p class="rank-score">R²: <span id="secondScore">-</span></p>
+                            <p class="rank-name" id="secondName">-</p>
+                        </div>
+                    </div>
+                    <div class="rank-card bronze">
+                        <div class="rank-medal">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="rank-info">
+                            <h3>3rd Place</h3>
+                            <p class="rank-score">R²: <span id="thirdScore">-</span></p>
+                            <p class="rank-name" id="thirdName">-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leaderboard Table -->
+                <div class="leaderboard-container">
+                    <div class="table-responsive">
+                        <table class="leaderboard-table" id="leaderboardTable">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Student Name</th>
+                                    <th>Model Name</th>
+                                    <th>R² Score</th>
+                                    <th>Notebook</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboardBody">
+                                <!-- Data will be populated by JavaScript -->
+                                <tr class="no-data">
+                                    <td colspan="6">
+                                        <div class="empty-state">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h3>No Data Available</h3>
+                                            <p>Click "Add New Result" to submit the first entry!</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3 id="totalStudents">0</h3>
+                        <p>Total Students</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-brain"></i>
+                        <h3 id="totalModels">0</h3>
+                        <p>Total Models</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3 id="avgScore">0.00</h3>
+                        <p>Average R² Score</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <h3 id="bestScore">0.00</h3>
+                        <p>Best R² Score</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 ModelCraft Academy. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a> |
+                <a href="#"><i class="fas fa-question-circle"></i> Help</a> |
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal for Notebook Alert -->
+    <div id="notebookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Notebook Not Available</h3>
+            <p>No notebook file was attached for this model submission.</p>
+            <button class="btn btn-secondary" id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

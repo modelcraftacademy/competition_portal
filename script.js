@@ -328,7 +328,7 @@ const sampleData = [
         modelName: 'Linear Regression',
         score: 0.679,
         notebookLink: 'https://github.com/alhossainn/machine_learning_to_deep_learning/blob/main/linear-regression-v3.ipynb'
-    }
+    },
 
     {
         id: '2',
@@ -363,3 +363,4 @@ setTimeout(() => {
     // updateLeaderboard(); // Uncomment to see sample data
 
 }, 1000);
+

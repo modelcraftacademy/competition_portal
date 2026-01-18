@@ -329,6 +329,15 @@ const sampleData = [
         score: 0.679,
         notebookLink: 'https://github.com/alhossainn/machine_learning_to_deep_learning/blob/main/linear-regression-v3.ipynb'
     }
+
+    {
+        id: '2',
+        studentName: 'Tansin Tabassum Alvi',
+        modelName: 'Linear Regression',
+        score: 0.683,
+        notebookLink: 'https://github.com/TansinTabassum/deep_learning/blob/main/linear-regression.ipynb'
+    }
+
     // {
     //     id: '2',
     //     studentName: 'Jane Smith',
@@ -352,4 +361,5 @@ leaderboardData = sampleData;
 setTimeout(() => {
     // leaderboardData = sampleData; // Uncomment to see sample data
     // updateLeaderboard(); // Uncomment to see sample data
+
 }, 1000);

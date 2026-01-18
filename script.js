@@ -356,6 +356,7 @@ const sampleData = [
 
 // Uncomment the line below to use sample data for testing
 leaderboardData = sampleData;
+updateLeaderboard();
 
 // Initialize with sample data for demo (comment this out in production)
 setTimeout(() => {
@@ -363,4 +364,5 @@ setTimeout(() => {
     // updateLeaderboard(); // Uncomment to see sample data
 
 }, 1000);
+
 

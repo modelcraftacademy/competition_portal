@@ -359,10 +359,11 @@ leaderboardData = sampleData;
 updateLeaderboard();
 
 // Initialize with sample data for demo (comment this out in production)
-setTimeout(() => {
-    // leaderboardData = sampleData; // Uncomment to see sample data
-    // updateLeaderboard(); // Uncomment to see sample data
+// setTimeout(() => {
+//     // leaderboardData = sampleData; // Uncomment to see sample data
+//     // updateLeaderboard(); // Uncomment to see sample data
 
-}, 1000);
+// }, 1000);
+
 
 

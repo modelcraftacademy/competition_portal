@@ -352,7 +352,7 @@ const sampleData = [
         modelName: 'Linear Regression',
         score: 0.778,
         notebookLink: 'https://github.com/theayon7/house_price_testing_linear_regression'
-    }
+    },
 
     {
         id: '5',
@@ -388,6 +388,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

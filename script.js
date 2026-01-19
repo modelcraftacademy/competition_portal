@@ -354,6 +354,14 @@ const sampleData = [
         notebookLink: 'https://github.com/theayon7/house_price_testing_linear_regression'
     }
 
+    {
+        id: '5',
+        studentName: 'Sristy Naha',
+        modelName: 'Linear Regression',
+        score: 0.828,
+        notebookLink: 'https://github.com/nahashanghita-srs/house-price-linear-regression'
+    }
+
     // {
     //     id: '2',
     //     studentName: 'Jane Smith',
@@ -380,6 +388,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

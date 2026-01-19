@@ -343,7 +343,7 @@ const sampleData = [
         studentName: 'Asif Ahmed',
         modelName: 'Linear Regression',
         score: 0.723,
-        notebookLink: 'https://github.com/TansinTabassum/deep_learning/blob/main/linear-regression.ipynb'
+        notebookLink: 'https://github.com/ImAs-If/housing-price-analysis-linear-regression'
     }
 
     // {
@@ -372,6 +372,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

@@ -344,6 +344,14 @@ const sampleData = [
         modelName: 'Linear Regression',
         score: 0.723,
         notebookLink: 'https://github.com/ImAs-If/housing-price-analysis-linear-regression'
+    },
+
+    {
+        id: '4',
+        studentName: 'Ayon Adhikary',
+        modelName: 'Linear Regression',
+        score: 0.778,
+        notebookLink: 'https://github.com/theayon7/house_price_testing_linear_regression'
     }
 
     // {
@@ -372,6 +380,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

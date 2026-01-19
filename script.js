@@ -336,6 +336,14 @@ const sampleData = [
         modelName: 'Linear Regression',
         score: 0.683,
         notebookLink: 'https://github.com/TansinTabassum/deep_learning/blob/main/linear-regression.ipynb'
+    },
+
+    {
+        id: '3',
+        studentName: 'Asif Ahmed',
+        modelName: 'Linear Regression',
+        score: 0.723,
+        notebookLink: 'https://github.com/TansinTabassum/deep_learning/blob/main/linear-regression.ipynb'
     }
 
     // {
@@ -364,6 +372,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

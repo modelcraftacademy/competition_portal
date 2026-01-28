@@ -322,59 +322,44 @@ function showNotification(message, type) {
 // In a real application, this data would come from your Google Sheets
 // To add your actual data, replace the sampleData array with your data
 const sampleData = [
-    {
-        id: '1',
-        studentName: 'Al Hossain',
-        modelName: 'Linear Regression',
-        score: 0.679,
-        notebookLink: 'https://github.com/alhossainn/machine_learning_to_deep_learning/blob/main/linear-regression-v3.ipynb'
-    },
-
-    {
-        id: '2',
-        studentName: 'Tansin Tabassum Alvi',
-        modelName: 'Linear Regression',
-        score: 0.683,
-        notebookLink: 'https://github.com/TansinTabassum/deep_learning/blob/main/linear-regression.ipynb'
-    },
-
-    {
-        id: '3',
-        studentName: 'Asif Ahmed',
-        modelName: 'Linear Regression',
-        score: 0.723,
-        notebookLink: 'https://github.com/ImAs-If/housing-price-analysis-linear-regression'
-    },
-
-    {
-        id: '4',
-        studentName: 'Ayon Adhikary',
-        modelName: 'Linear Regression',
-        score: 0.778,
-        notebookLink: 'https://github.com/theayon7/house_price_testing_linear_regression'
-    },
-
-    {
-        id: '5',
-        studentName: 'Sristy Naha',
-        modelName: 'Linear Regression',
-        score: 0.828,
-        notebookLink: 'https://github.com/nahashanghita-srs/house-price-linear-regression'
-    }
+    // {
+    //     id: '1',
+    //     studentName: 'Al Hossain',
+    //     modelName: 'Linear Regression',
+    //     score: 0.679,
+    //     notebookLink: 'https://github.com/alhossainn/machine_learning_to_deep_learning/blob/main/linear-regression-v3.ipynb'
+    // },
 
     // {
     //     id: '2',
-    //     studentName: 'Jane Smith',
-    //     modelName: 'Random Forest',
-    //     score: 0.9234,
-    //     notebookLink: ''
+    //     studentName: 'Tansin Tabassum Alvi',
+    //     modelName: 'Linear Regression',
+    //     score: 0.683,
+    //     notebookLink: 'https://github.com/TansinTabassum/deep_learning/blob/main/linear-regression.ipynb'
     // },
+
     // {
     //     id: '3',
-    //     studentName: 'Mike Johnson',
-    //     modelName: 'Neural Network',
-    //     score: 0.9456,
-    //     notebookLink: 'https://github.com/username/notebook3.ipynb'
+    //     studentName: 'Asif Ahmed',
+    //     modelName: 'Linear Regression',
+    //     score: 0.723,
+    //     notebookLink: 'https://github.com/ImAs-If/housing-price-analysis-linear-regression'
+    // },
+
+    // {
+    //     id: '4',
+    //     studentName: 'Ayon Adhikary',
+    //     modelName: 'Linear Regression',
+    //     score: 0.778,
+    //     notebookLink: 'https://github.com/theayon7/house_price_testing_linear_regression'
+    // },
+
+    // {
+    //     id: '5',
+    //     studentName: 'Sristy Naha',
+    //     modelName: 'Linear Regression',
+    //     score: 0.828,
+    //     notebookLink: 'https://github.com/nahashanghita-srs/house-price-linear-regression'
     // }
 ];
 
@@ -388,6 +373,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

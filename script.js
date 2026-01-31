@@ -322,13 +322,13 @@ function showNotification(message, type) {
 // In a real application, this data would come from your Google Sheets
 // To add your actual data, replace the sampleData array with your data
 const sampleData = [
-    // {
-    //     id: '1',
-    //     studentName: 'Al Hossain',
-    //     modelName: 'Linear Regression',
-    //     score: 0.679,
-    //     notebookLink: 'https://github.com/alhossainn/machine_learning_to_deep_learning/blob/main/linear-regression-v3.ipynb'
-    // },
+    {
+        id: '1',
+        studentName: 'Tansin Tabassum Alvi',
+        modelName: '- - -',
+        score: 0.84,
+        notebookLink: 'h'
+    }
 
     // {
     //     id: '2',
@@ -373,6 +373,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 

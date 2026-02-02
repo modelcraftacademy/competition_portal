@@ -328,6 +328,13 @@ const sampleData = [
         modelName: '- - -',
         score: 0.84,
         notebookLink: 'h'
+    },
+    {
+        id: '2',
+        studentName: 'Asif Ahmed',
+        modelName: '- - -',
+        score: 0.90,
+        notebookLink: 'h'
     }
 
     // {
@@ -373,6 +380,7 @@ updateLeaderboard();
 //     // updateLeaderboard(); // Uncomment to see sample data
 
 // }, 1000);
+
 
 
 
